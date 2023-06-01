@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+    <script>window.globalVariables = { gameOverCount: 0 }</script>
+    <script type="text/javascript" src="game.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="board-game">
+            <canvas id="board"></canvas>
+
+            <div class="popup" id="popup">
+                <div id="mainpopup">
+                    <p id="popupDescription">This game support the Good Gaming Posture Foundation. You can help by watching an ad or by signing to our newsletter.</p>
+                    <div class="button-container">
+                        <button type="button" onclick="watchAd()"> Watch Ad </button>
+                        <button type="button" onclick="emailPrompt()"> Enter Email </button>
+                    </div>
+                </div>
+                <div id="EmailPopup">
+                    <p id="popupDescription">Please provide your email:</p>
+                    <input type="text" id="emailInputField" placeholder="email@example.com">
+                    <button type="button" id="EmailSubmitButton" onclick="closeMainPopUp()"> Submit </button>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <video autoplay id="myVideo">
+                <source src="Mobile game.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+
+</html>
